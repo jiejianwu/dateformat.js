@@ -129,7 +129,6 @@ exports.isLeapYear = function(date) {
 	if (date instanceof Date) {
 		return (0 == date.getYear() % 4 && (( date.getYear() % 100 != 0) || (date.getYear() % 400 == 0)));
 	}
-	console.warn('argument format is wrong');
 	return false;
 };
 
@@ -255,7 +254,6 @@ exports.isNotEmpty = function(str) {
 	if (str != '' && str != null && typeof str != 'undefined') {
 		return true;
 	}
-	console.warn('argument format is wrong');
 	return false;
 };
 
